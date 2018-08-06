@@ -1,0 +1,7 @@
+
+   An example:
+   
+   ```js 
+   <Checkbox/>
+   ```
+   

@@ -1,0 +1,28 @@
+{
+  "name": "checkbox",
+  "version": "0.0.1",
+  "description": "",
+  "source": "src",
+  "main": "lib",
+  "devDependencies": {
+    "mrbuilder": "^3.1.5",
+    "mrbuilder-preset-app": "^3.1.5",
+    "mrbuilder-preset-lib": "^3.1.5",
+    "mrbuilder-preset-dev": "^3.1.5"
+  },
+  "scripts": {
+    "demo": "mrbuilder --app demo",
+    "start": "mrbuilder",
+    "prepublish": "mrbuilder",
+    "test": "mrbuilder",
+    "karma": "mrbuilder"
+  },
+  "mrbuilder": {
+    "plugins": [],
+    "presets": [
+      "mrbuilder-preset-app",
+      "mrbuilder-preset-lib",
+      "mrbuilder-preset-dev"
+    ]
+  }
+}

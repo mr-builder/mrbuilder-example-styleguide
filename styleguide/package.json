@@ -1,0 +1,47 @@
+{
+  "name": "styleguide",
+  "version": "0.0.1",
+  "description": "",
+  "source": "src",
+  "main": "lib",
+  "devDependencies": {
+    "mrbuilder": "^3.1.5",
+    "mrbuilder-plugin-doc-prop-types": "^3.1.5",
+    "mrbuilder-plugin-react-styleguidist": "^3.1.5",
+    "mrbuilder-preset-app": "^3.1.5",
+    "mrbuilder-preset-dev": "^3.1.5",
+    "mrbuilder-preset-lib": "^3.1.5"
+  },
+  "scripts": {
+    "demo": "mrbuilder --app demo",
+    "start": "MRBUILDER_PROFILE=start:styleguide mrbuilder",
+    "prepublish": "mrbuilder",
+    "test": "mrbuilder",
+    "karma": "mrbuilder"
+  },
+  "mrbuilder":{
+    "env": {
+      "styleguide": {
+        "plugins": [
+          [
+            "mrbuilder-plugin-react-styleguidist",
+            {
+              "sections": [
+                {
+                  "name":"Overview",
+                  "description":"This is a sample styleguide"
+                },
+                {
+                  "name": "Components",
+                  "lerna": {
+                    "scope": "*"
+                  }
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    }
+  }
+}
