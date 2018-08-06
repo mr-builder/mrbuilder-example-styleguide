@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "MRBUILDER_PROFILE=start:styleguide mrbuilder",
-    "prepublish": "MRBUILDER_PROFILE=production:styleguide mrbuilder  --demo docs" ,
+    "prepublish": "MRBUILDER_PROFILE=production:styleguide mrbuilder  --demo ../docs" ,
     "test": "mrbuilder",
     "karma": "mrbuilder"
   },
