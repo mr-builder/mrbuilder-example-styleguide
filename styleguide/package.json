@@ -13,9 +13,8 @@
     "mrbuilder-preset-lib": "^3.1.5"
   },
   "scripts": {
-    "demo": "mrbuilder --app demo",
     "start": "MRBUILDER_PROFILE=start:styleguide mrbuilder",
-    "prepublish": "mrbuilder",
+    "prepublish": "MRBUILDER_PROFILE=production:styleguide mrbuilder  --demo docs" ,
     "test": "mrbuilder",
     "karma": "mrbuilder"
   },
